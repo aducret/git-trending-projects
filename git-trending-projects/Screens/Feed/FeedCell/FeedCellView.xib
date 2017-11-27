@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FeedCellView" selectionStyle="default" indentationWidth="10" rowHeight="187" id="VrR-5u-h0E" customClass="FeedCellView" customModule="git_trending_projects" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VrR-5u-h0E" id="Jzz-t0-sJ5">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="186.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3b6-lB-tjO">
+                        <rect key="frame" x="23" y="13" width="329" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project stars count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbF-Ij-0PR">
+                        <rect key="frame" x="23" y="39" width="329" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJ7-3z-fB5">
+                        <rect key="frame" x="23" y="80" width="329" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.52063095162825246" green="0.52796501590063249" blue="0.54207031249999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="zJ7-3z-fB5" secondAttribute="bottom" constant="5" id="0Dl-9F-Zwm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3b6-lB-tjO" secondAttribute="trailing" constant="15" id="8NA-dp-Nrs"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pbF-Ij-0PR" secondAttribute="trailing" constant="15" id="BM7-fm-vmt"/>
+                    <constraint firstItem="pbF-Ij-0PR" firstAttribute="leading" secondItem="Jzz-t0-sJ5" secondAttribute="leadingMargin" constant="15" id="X89-i3-NH7"/>
+                    <constraint firstItem="zJ7-3z-fB5" firstAttribute="leading" secondItem="Jzz-t0-sJ5" secondAttribute="leadingMargin" constant="15" id="b75-K3-3HA"/>
+                    <constraint firstItem="zJ7-3z-fB5" firstAttribute="top" secondItem="pbF-Ij-0PR" secondAttribute="bottom" constant="20" id="dee-pE-lsw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zJ7-3z-fB5" secondAttribute="trailing" constant="15" id="hew-3v-jqW"/>
+                    <constraint firstItem="3b6-lB-tjO" firstAttribute="leading" secondItem="Jzz-t0-sJ5" secondAttribute="leadingMargin" constant="15" id="lJr-pJ-ck9"/>
+                    <constraint firstItem="pbF-Ij-0PR" firstAttribute="top" secondItem="3b6-lB-tjO" secondAttribute="bottom" constant="5" id="oGu-aM-NAR"/>
+                    <constraint firstItem="pbF-Ij-0PR" firstAttribute="top" secondItem="3b6-lB-tjO" secondAttribute="bottom" constant="5" id="rwK-6q-Gqf"/>
+                    <constraint firstItem="3b6-lB-tjO" firstAttribute="top" secondItem="Jzz-t0-sJ5" secondAttribute="topMargin" constant="5" id="zyS-YX-mXQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="projectDescriptionLabel" destination="zJ7-3z-fB5" id="mWg-DH-EU3"/>
+                <outlet property="projectNameLabel" destination="3b6-lB-tjO" id="c8y-GW-o4u"/>
+                <outlet property="projectStarsLabel" destination="pbF-Ij-0PR" id="TH2-Kc-26u"/>
+            </connections>
+            <point key="canvasLocation" x="-488.5" y="183.5"/>
+        </tableViewCell>
+    </objects>
+</document>

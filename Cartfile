@@ -1,2 +1,5 @@
 # ReactiveCocoa
 github "ReactiveCocoa/ReactiveCocoa" ~> 6.0
+
+# Networking
+github "Alamofire/Alamofire" ~> 4.5
